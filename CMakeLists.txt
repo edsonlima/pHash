@@ -66,7 +66,7 @@ set(LIBS_DEPS png z jpeg tiff)
 
 set(THREADS_PREFER_PTHREAD_FLAG ON)
 find_package(Threads REQUIRED)
-set(LIBS_DEPS ${LIBS_DEPS} pthreads)
+set(LIBS_DEPS ${LIBS_DEPS} pthread)
 
 find_library(LIBMPG123 mpg123)
 if(LIBMPG123)
