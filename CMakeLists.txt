@@ -18,7 +18,7 @@ OPTION(PHASH_EXAMPLES  "Compile examples"                               OFF)
 
 set(HAVE_IMAGE_HASH 1)
 
-set(LIBDIR "opt/lib")
+set(LIBDIR "/usr/local/lib")
 
 if(WITH_AUDIO_HASH)
     set(HAVE_AUDIO_HASH 1)
