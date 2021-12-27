@@ -18,6 +18,8 @@ OPTION(PHASH_EXAMPLES  "Compile examples"                               OFF)
 
 set(HAVE_IMAGE_HASH 1)
 
+set(LIBDIR "opt/lib")
+
 if(WITH_AUDIO_HASH)
     set(HAVE_AUDIO_HASH 1)
 endif()
@@ -64,7 +66,7 @@ set(LIBS_DEPS png z jpeg tiff)
 
 set(THREADS_PREFER_PTHREAD_FLAG ON)
 find_package(Threads REQUIRED)
-set(LIBS_DEPS ${LIBS_DEPS} Threads::Threads)
+set(LIBS_DEPS ${LIBS_DEPS} pthreads)
 
 find_library(LIBMPG123 mpg123)
 if(LIBMPG123)
